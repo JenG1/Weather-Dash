@@ -30,8 +30,16 @@
 
     <div class="container-fluid float-left row" id="searchRow">
         <div class="col-sm-12" id="colText">
-                <input type="text" placeholder="city, state" id="input_listName"/>
-                <button class="btn btn-unique btn-rounded btn-sm my-0" type="submit" id="btn_createList">Search</button>
+                <!-- <input type="text" placeholder="enter city" id="input_listName"/>
+                <button class="btn" type="submit" id="btn_createList"></button> -->
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Enter City Name" id="input_listName">
+                    <div class="input-group-append">
+                      <button class="btn btn-secondary" type="button" id="btn_createList">
+                        <i class="fa fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
             <ul class="ul_current">
             </ul>
         </div>
@@ -55,13 +63,16 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-    <script src="assets/logic.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <!-- Import Google API -->
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> 
+    <!-- External JS -->
+    <script src="assets/logic.js"></script>
 </body>
 
 </html>
