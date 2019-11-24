@@ -1,34 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- External CSS -->
     <link rel="stylesheet" type="text/css" href="assets/styles.css">
 
     <title>Weather Dash</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="container-fluid">
-        <h1 id=weather><img src="assets/images/logo.jpg" class = "img-fluid rounded" id="logo"alt="Logo">
+        <h1 id=weather><img src="assets/images/logo.jpg" class="img-fluid rounded" id="logo" alt="Logo">
     </div>
     <header class="masthead">
-            <div class="container-fluid">
-              <div class="row">
+        <div class="container-fluid">
+            <div class="row">
                 <div class="col-12 text-center">
-                  <h1 class="font-weight-light">Weather Dashboard</h1>
+                    <h1 class="font-weight-light">Weather Dashboard</h1>
                 </div>
-              </div>
             </div>
+        </div>
     </header>
 
+    <div class="container-fluid float-left row" id="searchRow">
+        <div class="col-sm-12" id="colText">
+                <input type="text" placeholder="city, state" id="input_listName"/>
+                <button class="btn btn-unique btn-rounded btn-sm my-0" type="submit" id="btn_createList">Search</button>
+            <ul class="ul_current">
+            </ul>
+        </div>
+    </div>
+
+    <div class="container-fluid float-right row" id="headRow">
+        <div class="col-sm-12" id="colText">
+            <h2 class="font-weight-light" id="localCityName">City:</h2>
+            <h2 class="font-weight-light" id="localCityDate">Date:</h2>
+
+            <ul class="list-inline" id="list_item">
+                <li>Temperature:</li>
+                <li>Humidity:</li>
+                <li>Windspeed:</li>
+                <li>UV Index:</li>
+            </ul>
+        </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="assets/logic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
