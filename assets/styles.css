@@ -9,9 +9,6 @@
     font-size:30px;
     background-color:#63BCC3;
     color: #ffffff;
-    /* background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
 }
 
 body{
@@ -23,6 +20,7 @@ body{
 }
 
 #searchRow{
+    border-radius: 25px;
     background-color:whitesmoke;
     color:slategrey;
     width:50%;
@@ -33,6 +31,7 @@ body{
 }
 
 #headRow{
+    border-radius: 25px;
     background-color: #ffffff;
     border: 5px solid #ffffff;
     box-shadow: 0 0 0 1px lightgrey inset;
@@ -43,4 +42,19 @@ body{
     text-align:left;
     padding: 20px; 
 }
+
+#forecast{
+    border-radius: 25px;
+    background-color: #ffffff;
+    border: 5px solid #ffffff;
+    box-shadow: 0 0 0 1px lightgrey inset;
+    color:slategrey;
+    width:50%;
+    height:30%;
+    margin-top:0px;
+    text-align:left;
+    padding: 20px; 
+}
+
+
 

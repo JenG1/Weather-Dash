@@ -47,19 +47,31 @@
         <div class="col-sm-12" id="colText">
             <h2 class="font-weight-light" id="localCityName">City:</h2>
             <h2 class="font-weight-light" id="localCityDate">Date:</h2>
+            <div id="error"></div>
+            <div id="showWeather"></div>
 
-            <ul class="list-inline" id="list_item">
-                <li>Temperature:</li>
-                <li>Humidity:</li>
-                <li>Windspeed:</li>
-                <li>UV Index:</li>
-            </ul>
-        </div>
+            <ul class="list-inline" id="current_city">
+                <li id = "temp">Temperature:</li>
+                <li id = "humidity">Humidity:</li>
+                <li id ="windspd">Windspeed:</li>
+                <li id = "uv">UV Index:</li>
+            </ul><hr>
+            <p><strong>Five Day Forecast:</strong></p><br>
+
+            <div class = "fiveDayForecast row" id="forecastRow">
+                <div class="col-sm-2" id="forecast">1</div>
+                <div class="col-sm-2" id="forecast">2</div>
+                <div class="col-sm-2" id="forecast">3</div>
+                <div class="col-sm-2" id="forecast">4</div>
+                <div class="col-sm-2" id="forecast">5</div>
+             </div>
     </div>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -67,10 +79,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <!-- Import Google API -->
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> 
     <!-- External JS -->
+    <script src="assets/script.js"></script>
     <script src="assets/logic.js"></script>
+
 </body>
 
 </html>
+
