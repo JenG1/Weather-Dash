@@ -1,7 +1,11 @@
 * {
     box-sizing: border-box;
   }
-  
+
+#logo {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0;
+}
+
 
 .masthead {
     height: 100px;
@@ -9,6 +13,7 @@
     font-size:30px;
     background-color:#63BCC3;
     color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0;
 }
 
 body{
@@ -21,13 +26,15 @@ body{
 
 #searchRow{
     border-radius: 25px;
-    background-color:whitesmoke;
+    background-color: #ffffff;
     color:slategrey;
     width:50%;
     height:30%;
-    margin-top:0px;
+    margin-top:5px;
+    margin-left:5px;
     text-align:left;
     padding: 20px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0;
 }
 
 #headRow{
@@ -38,9 +45,11 @@ body{
     color:slategrey;
     width:50%;
     height:30%;
-    margin-top:0px;
+    margin-top:5px;
+    margin-right:-9px;
     text-align:left;
     padding: 20px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0;
 }
 
 #forecast{

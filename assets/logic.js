@@ -37,7 +37,7 @@ $(document).ready(function () {
     var y = rawDate.getFullYear();
     var currentDate = (m + '/' + d + '/' + y);
     cityName = $("#localCityName").text(cityName);
-    currentDate = $("#localCityDate").text(currentDate);
+    currentDate = $("#localCityDate").text("("+currentDate+")");
     //Current Temperature
     var temp = response.list[0].main.temp;
     var humidity = response.list[0].main.humidity;
@@ -46,6 +46,11 @@ $(document).ready(function () {
     temp = $('#temp').text('Temperature: ' + temp + '°F');
     humidity = $('#humidity').text('Humidity: ' + humidity + '%');
     windspd = $('#windspd').text('Wind Speed: ' + windspd + 'MPH');
+    //Weather Icon
+    var weatherIcon = $('#weatherIcon');
+    iconSrc = 'http://openweathermap.org/img/wn/' + response.list[0].weather[0].icon + '@2x.png';
+    weatherIcon.attr('src', iconSrc);
+
     // Coordinates for UV API call
     var lat = response.city.coord.lat;
     var lon = response.city.coord.lon;
