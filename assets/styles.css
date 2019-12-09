@@ -56,5 +56,26 @@ body{
     padding: 20px; 
 }
 
+.lowUV {
+    background-color: lightgreen;
+    display: inline;
+    text-align:center;
+    border-radius: 5px;
+}
+
+.medUV {
+    background-color: rgb(255, 241, 47);
+    display: inline;
+    text-align:center;
+    border-radius: 5px;
+}
+
+.highUV {
+    background-color: rgb(255, 47, 47);
+    display: inline;
+    text-align:center;
+    border-radius: 5px;
+}
+
 
 
