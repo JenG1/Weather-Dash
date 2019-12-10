@@ -19,25 +19,26 @@
         <h1 id=weather><img src="assets/images/logo.jpg" class="img-fluid rounded" id="logo" alt="Logo">
     </div>
     <header>
-            <div class="row">
-                <div class="container-fluid masthead col-12 text-center">
-                    <h1 class="font-weight-light">Weather Dashboard</h1>
-                </div>
+        <div class="row">
+            <div class="container-fluid masthead col-12 text-center">
+                <h1 class="font-weight-light">Weather Dashboard</h1>
             </div>
+        </div>
     </header>
 
     <div class="container-fluid float-left row" id="searchRow">
         <div class="col-sm-12" id="colText">
-                <!-- <input type="text" placeholder="enter city" id="input_listName"/>
+            <!-- <input type="text" placeholder="enter city" id="input_listName"/>
                 <button class="btn" type="submit" id="btn_createList"></button> -->
-                <div class="input-group">
-                    <input type="text" onfocus="this.value=''" class="form-control" placeholder="Enter City Name" id="input_listName">
-                    <div class="input-group-append">
-                      <button class="btn btn-secondary" type="button" id="btn_createList">
+            <div class="input-group">
+                <input type="text" onfocus="this.value=''" class="form-control" placeholder="Enter City Name"
+                    id="input_listName">
+                <div class="input-group-append">
+                    <button class="btn btn-secondary" type="button" id="btn_createList">
                         Search
-                      </button>
-                    </div>
+                    </button>
                 </div>
+            </div>
             <ul class="ul_current" style="background-color: aliceblue;">
             </ul>
         </div>
@@ -49,28 +50,54 @@
             <h2 class="font-weight-light" id="localCityDate">Date:</h2>
             <img id="weatherIcon">
             <ul class="list-inline" id="current_city">
-                <li id = "temp">Temperature:</li>
-                <li id = "humidity">Humidity:</li>
-                <li id ="windspd">Windspeed:</li>
-                <li id = "uvIndex">UV Index:<span id="uv"></span></li>
-            </ul><hr>
-            <p><strong>Five Day Forecast:</strong></p><br>
+                <li id="temp">Temperature:</li>
+                <li id="humidity">Humidity:</li>
+                <li id="windspd">Windspeed:</li>
+                <li id="uvIndex">UV Index:<span id="uv"></span></li>
+            </ul>
+            <hr>
+        </div>
+        <p><strong>Five Day Forecast:</strong></p><br>
+        <div class="container-fluid row" id="forecastRow">
+            <div class="col-md-2 col-md-offset-1 forecast">
+                <div id="day-1">Day 1</div>
+                <img id="day-1-icon">
+                <div id="temp1"></div>
+                <div id="humidity1"></div>
+            </div>
+            <div class="col-md-2 forecast">
+                <div id="day-2">Day 2</div>
+                <img id="day-2-icon">
+                <div id="temp2"></div>
+                <div id="humidity2"></div>
+            </div>
+            <div class="col-md-2 forecast">
+                <div id="day-3">Day 3</div>
+                <img id="day-3-icon">
+                <div id="temp3"></div>
+                <div id="humidity3"></div>
+            </div>
+            <div class="col-md-2 forecast">
+                <div id="day-4">Day 4</div>
+                <img id="day-4-icon">
+                <div id="temp4"></div>
+                <div id="humidity4"></div>
+            </div>
+            <div class="col-md-2 forecast">
+                <div id="day-5">Day 5</div>
+                <img id="day-5-icon">
+                <div id="temp5"></div>
+                <div id="humidity5"></div>
+            </div>
+        </div>
 
-            <div class = "fiveDayForecast row" id="forecastRow">
-                <div class="col-sm-2" id="forecast day-1">1</div>
-                <div class="col-sm-2" id="forecast day-2">2</div>
-                <div class="col-sm-2" id="forecast day-3">3</div>
-                <div class="col-sm-2" id="forecast day-4">4</div>
-                <div class="col-sm-2" id="forecast day-5">5</div>
-             </div>
     </div>
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-        crossorigin="anonymous"></script>
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
@@ -84,4 +111,3 @@
 </body>
 
 </html>
-

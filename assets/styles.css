@@ -10,7 +10,7 @@
 .masthead {
     height: 100px;
     min-width:100%;
-    font-size:30px;
+    font-size:26px;
     background-color:#63BCC3;
     color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0;
@@ -44,7 +44,7 @@ body{
     box-shadow: 0 0 0 1px lightgrey inset;
     color:slategrey;
     width:50%;
-    height:30%;
+    height:40%;
     margin-top:5px;
     margin-right:-9px;
     text-align:left;
@@ -52,18 +52,19 @@ body{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0;
 }
 
-#forecast{
-    border-radius: 25px;
-    background-color: #ffffff;
-    border: 5px solid #ffffff;
+.forecast{
+    border-radius: 10px;
+    background-color: lightskyblue;
     box-shadow: 0 0 0 1px lightgrey inset;
-    color:slategrey;
-    width:50%;
-    height:30%;
-    margin-top:0px;
+    color:#ffffff;
+    font-size: 12px;
+    width:40%;
+    height:87%;
     text-align:left;
-    padding: 20px; 
+    padding: 5px; 
+    margin:6px;
 }
+
 
 .lowUV {
     background-color: lightgreen;
