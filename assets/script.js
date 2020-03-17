@@ -138,10 +138,8 @@ $(document).ready(function() {
     function renderWeather() {
         historyLink = $('<div>');
         historyText = '<p onclick="currentWeather"> ' + cityQ + '</p>';
-        // Save city name to storage
         citiesList.push(historyText);
         console.log(historyText);
-
         localStorage.setItem('cities', JSON.stringify(historyText));
         historyLink.append(historyText);
         historyLink.attr('data-city', cityQ);
