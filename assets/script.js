@@ -146,9 +146,7 @@ $(document).ready(function() {
         historyLink.addClass('historyBtn');
         historyEl.append(historyLink);
     }
-
     searchF.on('submit', search);
-
     btn.on('click', function() {
         clearHistory();
     });
